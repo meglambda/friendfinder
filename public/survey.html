@@ -177,7 +177,7 @@
           <br>
          </div> 
 
-        <button type="submit" id="submit" class="btn btn-default">Submit</button>
+        <button type="submit" id="submit" class="btn btn-default" data-toggle="modal" data-target="#myModal">Submit</button>
 
       </form>
       <br>
@@ -192,11 +192,12 @@
         <p><a href="/api/friends">API table link</a>|<a href="https://github.com/meglambda/friendfinder">GitHub Repo</a></p>
       </div>
     </footer>
+<script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-</body>
-</html>
 
-<script> 
+<script type="text/javascript" > 
   
     
     $("#submit").on("click", function(event) {
@@ -217,11 +218,12 @@
    
    $.ajax({ url: "/api/friends", contentType: "application/json", data: JSON.stringify(newFriend), type: "POST" }).done(function(data) {
     if(data){
-      alert("Your new friend is: " + data.name);
+      // alert("Your new friend is: " + data.name);
       //I commented this out because the modal doesn't seem to function
 
-      // $('#friendName').text(data.name);
-      // $('#myModal').modal(toggle);
+      $('#friendName').text(data.name);
+      $('#friendImg').attr('src', data.photoUrl);
+      $('#myModal').modal(toggle);
     }else {
       alert("didn't add data!")
     }
@@ -232,3 +234,6 @@
 
    });  
   </script>
+  
+</body>
+</html>

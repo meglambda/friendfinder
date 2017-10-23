@@ -1,7 +1,7 @@
 var friendsArray = [
 {
     "name": "Josh",
-    "photoUrl": "askdjf;lkajsdf",
+    "photoUrl": "http://www.joshgroban.com/sites/g/files/g2000006141/f/201609/josh_interior.jpg",
     "data[]": [
       1,
       2,
