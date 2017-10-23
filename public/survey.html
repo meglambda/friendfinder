@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey</title>
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		
+		<div class="jumbotron">
+      <h1 class="text-center"><strong>Survey Questions</strong></h1>
+      <hr>
+      
+    </div>	
+
+    <div class="row addReservation">
+    <div class="labelsAndInputs">
+      <div>
+        <h4 class="styleBlue">About You</h4>
+      </div>
+
+      <form>
+
+          <div class="form-group">
+            <label for="name">Name(Required)</label>
+            <input type="name" class="form-control" id="name">
+          </div>
+
+          <div class="form-group">
+            <label for="name">Link to Photo Image(Required)</label>
+            <input type="name" class="form-control" id="photoUrl">
+          </div>
+        
+        <div class="questionOne"><strong>1. Dogs are the best animals alive</strong><br>
+          <select data-placeholder class="form-control" id="q1"
+          >
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+          </select>
+          <br>
+          <br>
+         </div> 
+
+        <div class="questionTwo"><strong>2. Traveling is the best way to spend your money</strong><br>
+          <select class="form-control" id="q2">
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+          </select>
+          <br>
+          <br>
+         </div> 
+
+          <div class="questionThree"><strong>3.Star Wars is a wonderful movie</strong><br>
+          <select class="form-control" id="q3">
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+          </select>
+          <br>
+          <br>
+         </div> 
+
+          <div class="questionFour"><strong>4.I never eat fast food</strong><br>
+          <select class="form-control" id="q4">
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+          </select>
+          <br>
+          <br>
+         </div> 
+
+          <div class="questionFive"><strong>5. I love to read</strong><br>
+          <select class="form-control" id="q5">
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+          </select>
+          <br>
+          <br>
+         </div> 
+
+
+          <div class="questionSix"><strong>6.I get annoyed at people easily</strong><br>
+          <select class="form-control" id="q6">
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+          </select>
+          <br>
+          <br>
+         </div> 
+
+          <div class="questionSeven"><strong>7. I thrive in stressful situations</strong><br>
+          <select class="form-control" id="q7">
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+          </select>
+          <br>
+          <br>
+         </div> 
+
+          <div class="questionEight"><strong>8. I am a great test taker</strong><br>
+          <select class="form-control" id="q8">
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+          </select>
+          <br>
+          <br>
+         </div> 
+
+          <div class="questionNine"><strong>9. Rap is the best form of music</strong><br>
+          <select class="form-control" id="q9">
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+          </select>
+          <br>
+          <br>
+         </div> 
+
+          <div class="questionTen"><strong>10. I am very artistic</strong><br>
+          <select class="form-control" id="q10">
+            <option value="1">1 (Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree</option>
+          </select>
+          <br>
+          <br>
+         </div> 
+
+        <button type="submit" id="submit" class="btn btn-default">Submit</button>
+
+      </form>
+      <br>
+      <br>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API table link</a>|<a href="https://github.com/meglambda/friendfinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+</body>
+</html>
+
+<script> 
+  
+    
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+    
+    
+    var newFriend = {
+      name: $("#name").val().trim(),
+      photoUrl: $("#photoUrl").val(),
+      data: [ parseInt($("#q1").val()), parseInt($("#q2").val()), parseInt($("#q3").val()), parseInt($("#q4").val()), parseInt($("#q5").val()), parseInt($("#q6").val()), parseInt($("#q7").val()), parseInt($("#q8").val()), parseInt($("#q9").val()), parseInt($("#q10").val()) ]
+    }
+    console.log("hmm?" + newFriend);
+    console.log("Name: " + newFriend.name)
+    console.log("photoUrl: " + newFriend.photoUrl)
+    //hello
+    
+     
+   
+   $.ajax({ url: "/api/friends", contentType: "application/json", data: JSON.stringify(newFriend), type: "POST" }).done(function(data) {
+    if(data){
+      alert("Your new friend is: " + data.name);
+    }else {
+      alert("didn't add data!")
+    }
+    $("#name").val("");
+    $("#photoUrl").val("");
+
+  });  
+
+   });  
+  </script>
